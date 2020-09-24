@@ -9,15 +9,8 @@ h1 {
   text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
 }
 
-.holder{
-  overflow: auto;
-  width: 100%;
-}
-
-.floater{
-  float: left;
-  width: 100px;  
-  height: 100px;  
+.one-line{
+  display: inline;
 }
 
 

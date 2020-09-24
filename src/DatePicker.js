@@ -1,11 +1,12 @@
 import React from "react";
+import "./DatePicker.css";
 
 const DatePicker = () => {
 
     return(
 
         <div>
-            <input type = "date" id = "birthdate" />
+            <input className = "dp-style" type = "date" id = "birthdate" />
         </div>
 
     );

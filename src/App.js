@@ -16,11 +16,11 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Know your Birthday!</h1>
-        <div className = "holder">
-          <SearchBox className="floater" />
-          <DatePicker className="floater"/>
-          <Button className="floater"/>
-        </div>
+        
+         <span><SearchBox className="one-line" /></span>
+          <span><DatePicker className="one-line"/></span>
+          <span><Button className="one-line"/></span>
+        
       </div>
     );
   }

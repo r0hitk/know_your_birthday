@@ -1,0 +1,9 @@
+.dp-style{
+    padding: 5px;
+    margin: auto;
+    width: auto;
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 10px #e9732f; 
+    outline: none;
+}
