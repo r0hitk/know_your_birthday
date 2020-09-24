@@ -4,7 +4,7 @@ import "./Button.css";
 const Button = (props) => {
 
     return <div>
-        <button className = "btn-style" onClick= {props.searchIt}>Create a Card</button>
+        <button type = "button" className = "btn-style" onClick= {props.searchIt}>Create a Card</button>
     </div>;
 
 }

@@ -1,9 +1,11 @@
 .dp-style{
-    padding: 5px;
-    margin: auto;
-    width: auto;
+    padding: 10px 20px 10px 20px;
+    margin: .5em;
+    width: 150px;
+    height: auto;
     border-color: white;
     border-radius: 20px;
     box-shadow: 5px 10px #e9732f; 
     outline: none;
+   
 }
