@@ -1,0 +1,6 @@
+import {SET_NAME_FIELD} from "./constants";
+
+export const setName = (text) => ({
+    type: SET_NAME_FIELD,
+    payload: text
+});

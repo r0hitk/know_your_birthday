@@ -1,12 +1,12 @@
-.btn-style{
+.dp-style{
     padding: 10px 20px 10px 20px;
     margin: .5em;
-    width: auto;
+    width: 150px;
     height: auto;
-    text-align: center;
+    border-color: white;
     border-radius: 20px;
     box-shadow: 5px 10px #e9732f; 
     outline: none;
-    border-color: white;
     
+   
 }
