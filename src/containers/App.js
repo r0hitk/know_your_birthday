@@ -10,7 +10,7 @@ const mapStateToProps = (state) => {
   return {
     name: state.showACard.name,
     date: state.showACard.date,
-    cards: state.showACard.cards
+    cards: state.showACard.cards,
   };
 };
 
@@ -18,13 +18,11 @@ const mapDispatchToProps = (dispatch) => {
   return {
     onClick: (event) => {
       dispatch(setName(event.target.value));
-    }
-    
+    },
   };
 };
 
 class App extends React.Component {
-
   render() {
     return (
       <div className="App">

@@ -3,7 +3,7 @@ import { SET_NAME_FIELD } from "./constants";
 const initialstate = {
   name: "",
   date: "",
-  cards: []
+  card: {}
 };
 
 const showACard = (state = initialstate, action = {}) => {
