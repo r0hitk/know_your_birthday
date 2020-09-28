@@ -20,7 +20,7 @@ h1 {
 .item{
   flex-basis: 100px;
   align-items: baseline;
-  align-self: baseline;
+  align-self: stretch;
 }
 
 

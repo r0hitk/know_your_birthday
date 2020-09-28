@@ -1,16 +1,29 @@
 import React from "react";
+import { connect } from "react-redux";
 import "./App.css";
 import SearchBox from "../components/SearchBox";
 import Button from "../components/Button";
 import DatePicker from "../components/DatePicker";
+import { createCard } from "../actions,js";
+
+const mapStateToProps = (state) => {
+  return {
+    name: state.showACard.name,
+    date: state.showACard.date,
+    cards: state.showACard.cards
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onClick: (event) => {
+      dispatch(setName(event.target.value));
+    }
+    
+  };
+};
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      title: "Know Your Birthday",
-    };
-  }
 
   render() {
     return (
@@ -19,11 +32,11 @@ class App extends React.Component {
         <div className="container">
           <SearchBox className="item" />
           <DatePicker className="item" />
-          <Button className="item" />
+          <Button className="item" btnClick={this.props.onClick} />
         </div>
       </div>
     );
   }
 }
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);
